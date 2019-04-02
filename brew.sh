@@ -70,6 +70,11 @@ brew install ffmpeg --with-libvpx
 
 brew install terminal-notifier
 
+
+# webdev stuff
+brew install postgres
+brew install postgis
+
 brew install android-platform-tools
 brew install pidcat   # colored logcat guy
 
