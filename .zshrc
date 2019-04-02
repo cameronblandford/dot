@@ -74,9 +74,15 @@ alias dc="docker-compose"
 alias dcr="docker-compose down && docker-compose build --no-cache && docker-compose up -d"
 alias composer="php composer.phar"
 alias mcsync="rsync -av root@airdnd.info:~/data ~/minecraft_backup"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# export nvm dir
+export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
+
+# this loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# this loads bash completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -91,3 +97,6 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 # Go
 export GOPATH="$HOME/code/go"
+
+# IMPORTS
+source ~/.aliases
