@@ -113,3 +113,5 @@
 	showPatch = true
 [log]
 	date = relative
+[credential]
+	helper = osxkeychain
