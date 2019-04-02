@@ -2,8 +2,7 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-
-
+export ZSH="/Users/cam/dot/oh-my-zsh"
 COMPLETION_WAITING_DOTS="true"
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -112,3 +111,6 @@ export GOPATH="$HOME/code/go"
 
 # IMPORTS
 source ~/.aliases
+
+# Source oh-my-zsh
+source $ZSH/oh-my-zsh.sh
