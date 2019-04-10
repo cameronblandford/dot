@@ -17,6 +17,8 @@ brew install findutils
 # GNU `sed`, overwriting the built-in `sed`
 brew install gnu-sed --with-default-names
 
+# Install diff-so-fancy
+brew install diff-so-fancy
 
 # Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
